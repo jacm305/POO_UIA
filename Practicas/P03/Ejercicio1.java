@@ -2,8 +2,8 @@ public class Ejercicio1
 {
 	public static void main (String [] args)
 	{
-		int a = 10, b = 3, c = 1;
-		int x, y, d, e; // para resolver la operacion la variable debe de ser del mismo tipo 
+		int a = 10, b = 3, c = 1, d, e;
+		float x, y;
 		Boolean c1; // darle una variable diferente a ña qie ua esta declaradade
 		double resultado;		
 		

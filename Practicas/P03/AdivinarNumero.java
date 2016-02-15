@@ -3,7 +3,7 @@ public class AdivinarNumero{
     public static void main(String[] args) {
         Scanner teclado = new Scanner (System.in);
         double num = Math.random() * 10; //es un metodo Math.random escoge un nuero entre el 1 y el 10
-        int numero = (int) num;
+        int numero = (intc) num;
         int n =0;
         int valor = 0;
         do {
