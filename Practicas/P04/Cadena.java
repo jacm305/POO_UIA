@@ -36,7 +36,7 @@ public class Cadena {
 
 				}
 
-						System.out.print("-"+cadenaAuxiliar \n);
+						 System.out.print("-"+cadenaAuxiliar \n);
 			}
 
 	}

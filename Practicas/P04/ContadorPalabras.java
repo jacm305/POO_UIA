@@ -9,7 +9,7 @@ import java.io.*;
   boolean palabra = false;
   int ncaracteres = 0, npalabras = 0, nlineas = 0;
  
-  //try
+  try
   {
    System.out.println("Introducir texto. " + "Pulse [Enter] despues de cada linea.");
    System.out.println("Para finalizar pulsar Ctrl+z.\n");
@@ -34,6 +34,6 @@ import java.io.*;
    System.out.println();
    System.out.println(ncaracteres + " " + npalabras + " " + nlineas);
   }
-  //catch(IOException ignorada){}
+  catch(IOException ignorada){}
  }   
 }
