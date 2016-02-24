@@ -1,43 +1,42 @@
+import java.io.*;
+public class Ejercicio1{
+    public static void main(String[] args)throws IOException{
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader flujoE = new BufferedReader(isr);
+        int num, media;
+        int suma=0;
+       
+       do{
+            System.out.println("Define el Tamaño del Arreglo:");
+            num = Integer.parseInt(flujoE.readLine());
 
-import java.util.*;
-public class Ejercicio1 {
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        int num, i, numImpares;
-        int suma = 0, media;
-
-
-        System.out.print("Ingrese numeros: ");
-            num = sc.nextInt();
-        if(num%2==0){  
-             System.out.println(num +" es par");  
-        }else{  
-                       
-            int[] numeros = new int[numImpares = 0]; 
-        
-            for (i = 0; i < numeros.length; i++) {
-                System.out.print("Numeros impares " + (i + 1) + " Media: ");
-                numeros[i] = sc.nextInt();
-            }
-        
-            for (i = 0; i < numeros.length; i++) {
-                suma = suma + numeros[i];
+            if (num<=0){
+                  System.out.println("Valor incorrecto, ingrse otro numero");
             }
 
-        
-            media = suma / numeros.length;
-
-        
-            System.out.printf("La media de los numeros: %.2f %n", media);
-
-        
-            System.out.println("Numeros superiores a la media: ");
-            for (i = 0; i < numeros.length; i++) {
-                if (numeros[i] > media) {
-                    System.out.println("Numeros Impares " + (i + 1)+ " Media: " + numeros[i]);
-                }
-            }
         }
+            while(num%2==0);
+                  
+            
+                int a[] = new int[num];
+                System.out.println("Ingresa los numeros para el Arreglo");
+        
+                for (int i =0; i < num; i++){
+        
+                    System.out.println("Valor "+ i + ":");
+                    a[i] = Integer.parseInt(flujoE.readLine());
+                    suma=suma +a[i];
+                }
+                    int mayor=a[0];     
+                    int menor=a[0];
+                    for(int m = 0; m < a.length; m++){ 
+                        if(a[m] > mayor)
+                            mayor = a[m]; 
+                                if(a[m] < menor)
+                                    menor = a[m];       
+                    }
+                        media=a.length-1;
+        
+                        System.out.println("El Valor de la Media es:" + a[media/2]);   
     }
 }
