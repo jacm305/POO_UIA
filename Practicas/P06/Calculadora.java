@@ -1,5 +1,7 @@
+import java.io.*;
 import java.io.BufferedReader; 
 import java.io.InputStreamReader;
+
 
 public class Calculadora { 
 
@@ -47,10 +49,10 @@ public class Calculadora {
                         BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); //para alamacenar  
                         opcion = Integer.parseInt(br.readLine());                 //la opcion que deseamos ejecutar
 
-
+                            System.out.println("La opcion que elegiste es:" + opcion);
 
                             if(opcion > 0 && opcion < 5){     //if para comparar que se ingrese un numero 
-                                                              //mayor a 0 y menor a 5
+                                                            //mayor a 0 y menor a 5
                                 System.out.println("Ingrese primer numero:"); 
                                 double n1 = Double.parseDouble(br.readLine()); 
 
